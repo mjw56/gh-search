@@ -1,8 +1,6 @@
 import got from 'gh-got';
 
-const Search = function(query, opts) { 
-  opts = opts || {};
-
+const Search = function Search(query, opts = {}) {
   if (typeof query !== 'string') {
     return Promise.reject(new Error('Please enter search query as string.'));
   }
@@ -17,9 +15,7 @@ const Search = function(query, opts) {
     url = `${url}&order=${opts.order}`;
   }
 
-  return got(url, opts).then((res) => {
-    return res.body;
-  });
+  return got(url, opts).then(res => res.body);
 };
 
 export { Search };
