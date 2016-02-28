@@ -1,3 +1,3 @@
-import { Search } from './search';
+import { ghSearch } from './search';
 
-export { Search };
+export { ghSearch as default };

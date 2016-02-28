@@ -1,6 +1,6 @@
 import got from 'gh-got';
 
-const Search = function Search(query, opts = {}) {
+const ghSearch = function ghSearch(query, opts = {}) {
   if (typeof query !== 'string') {
     return Promise.reject(new Error('Please enter search query as string.'));
   }
@@ -15,7 +15,12 @@ const Search = function Search(query, opts = {}) {
     url = `${url}&order=${opts.order}`;
   }
 
+  if (opts.type === 'repositories' || opts.type === 'code' || opts.type === 'issues'
+    || opts.type === 'users') {
+    url = `${url}&type=${opts.type}`;
+  }
+
   return got(url, opts).then(res => res.body);
 };
 
-export { Search };
+export { ghSearch };
