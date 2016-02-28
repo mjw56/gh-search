@@ -6,6 +6,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "./build.sh",
+    "lint": "eslint src",
     "test": "node ./test/index"
   },
   "author": "Mike Wilcox <mwilcox56@gmail.com> (http://github.com/mjw56)",
@@ -17,6 +18,8 @@
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
+    "eslint": "^2.2.0",
+    "eslint-config-mikewilcox": "^1.2.0",
     "expect": "^1.13.4",
     "webpack": "^1.12.11",
     "webpack-dev-server": "^1.14.1"
