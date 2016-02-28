@@ -6,8 +6,6 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "./build.sh",
-    "dev": "webpack-dev-server --config webpack.dist.config.js --content-base dist/ --inline --hot",
-    "serve": "npm run build && npm run dev",
     "test": "node ./test/index"
   },
   "author": "Mike Wilcox <mwilcox56@gmail.com> (http://github.com/mjw56)",
@@ -24,6 +22,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "github": "^0.2.4"
+    "gh-got": "^2.4.0"
   }
 }
