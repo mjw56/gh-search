@@ -1,5 +1,5 @@
 {
-  "name": "github-search",
+  "name": "gh-search",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,17 +12,11 @@
   "author": "Mike Wilcox <mwilcox56@gmail.com> (http://github.com/mjw56)",
   "license": "ISC",
   "devDependencies": {
-    "babel": "^6.3.26",
     "babel-cli": "^6.4.0",
-    "babel-core": "^6.4.0",
-    "babel-eslint": "^4.1.6",
-    "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "eslint": "^2.2.0",
     "eslint-config-mikewilcox": "^1.2.0",
-    "expect": "^1.13.4",
-    "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.1"
+    "expect": "^1.13.4"
   },
   "dependencies": {
     "gh-got": "^2.4.0"
