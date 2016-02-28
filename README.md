@@ -14,7 +14,8 @@ $ npm i gh-search -S
 import ghSearch from 'gh-search';
 
 ghSearch('javascript', { sort: 'stars' })
-  .then(res => console.log(res));
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
 ```
 
 ## LICENSE
