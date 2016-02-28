@@ -1,6 +1,6 @@
 # gh-search
 
-A simply utility to search GitHub API
+A simple utility to search GitHub API
 
 ## Install
 
