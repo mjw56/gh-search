@@ -1,7 +1,7 @@
 {
   "name": "gh-search",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "A simply utility to search GitHub API",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run build",
